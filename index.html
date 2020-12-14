@@ -482,6 +482,12 @@
       AOS.init();
       $("a").attr("target", "_blank");
       $("a").attr("rel", "noopener");
+      $("#sidebar").on("mouseenter", function () {
+        $(this).css({ overflow: "auto" });
+      });
+      $("#sidebar").on("mouseleave", function () {
+        $(this).css({ overflow: "hidden" });
+      });
     </script>
   </body>
 </html>
