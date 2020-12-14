@@ -254,7 +254,6 @@ abbr {
 }
 
 #sidebar:hover {
-  padding: 100px;
   background: rgb(99, 94, 94);
   height: 100vh;
   color: #df6c89;
@@ -433,6 +432,24 @@ abbr {
   #zen-requirements-p p {
     margin: 50px 10px;
     padding: 30px 25px;
+  }
+  #sidebar {
+    padding: 30px;
+  }
+  #sidebar:hover::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    top: 0;
+    right: 0;
+  }
+  #sidebar:hover::after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    top: 0;
+    right: 0;
+    display: none;
   }
   #footer a {
     margin: 5px;
