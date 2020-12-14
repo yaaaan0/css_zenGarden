@@ -143,7 +143,7 @@ abbr {
 }
 
 #zen-supporting #zen-explanation p {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin: 80px;
 }
 
@@ -157,13 +157,13 @@ abbr {
 }
 #zen-supporting #zen-participation h3 {
   font-size: 4rem;
-  margin: 100px;
+  margin: 50px;
 }
 
 #zen-supporting #zen-participation h3::before {
   content: " ";
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   background-color: #df6c89;
   position: absolute;
   top: -5px;
@@ -187,8 +187,8 @@ abbr {
 
 #zen-supporting #zen-benefits h3::before {
   content: "";
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   background-color: rgb(143, 142, 142);
   position: absolute;
   top: -5px;
@@ -247,6 +247,8 @@ abbr {
   right: -510px;
   top: 0;
   cursor: pointer;
+  /* overflow: auto; */
+  box-sizing: border-box;
 
   transition: 1s;
 }
@@ -260,6 +262,8 @@ abbr {
   right: 0px;
   top: 0;
   cursor: pointer;
+  /* overflow: auto; */
+  box-sizing: border-box;
 }
 
 #sidebar::before {
@@ -375,6 +379,77 @@ abbr {
   width: 40px;
 }
 
+@media (max-width: 480px) {
+  #zen-summary {
+    width: 90%;
+    margin: 50px 10px;
+    font-size: 1.8rem;
+  }
+  #zen-preamble {
+    padding: 0;
+  }
+  #zen-preamble h3 {
+    margin: 50px 0;
+    width: 90%;
+    font-size: 2.5rem;
+  }
+  #zen-preamble p {
+    margin-bottom: 50px;
+    width: 90%;
+    font-size: 1.5rem;
+  }
+
+  #zen-supporting #zen-explanation h3 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  #zen-supporting #zen-explanation p {
+    font-size: 1.5rem;
+    margin: 80px 20px;
+  }
+  #zen-supporting #zen-participation {
+    width: 90%;
+  }
+  #zen-supporting #zen-participation h3 {
+    width: 100%;
+    margin: 30px;
+  }
+
+  #zen-supporting #zen-participation p {
+    margin: 10px;
+    margin-bottom: 50px;
+  }
+  #zen-requirements h3 {
+    font-size: 2.5rem;
+    margin-top: 100px;
+    color: #df6c89;
+  }
+  #zen-requirements-p {
+    font-size: 1.5rem;
+    margin: 50px 10px;
+    color: #131112;
+  }
+  #zen-requirements-p p {
+    margin: 50px 10px;
+    padding: 30px 25px;
+  }
+  #footer a {
+    margin: 5px;
+
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.8s;
+  }
+}
+
 @media (min-width: 992px) {
   #banner h1 {
     font-size: 6rem;
@@ -426,10 +501,45 @@ abbr {
   #zen-supporting #zen-participation {
     flex-direction: row;
   }
+
+  #zen-supporting #zen-participation h3::before {
+    content: " ";
+    width: 200px;
+    height: 200px;
+  }
+
   #zen-supporting #zen-benefits {
     flex-direction: row-reverse;
   }
+
+  #zen-supporting #zen-benefits h3::before {
+    content: "";
+    width: 200px;
+    height: 200px;
+  }
+
   #zen-requirements-p {
     flex-direction: row;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1280px) {
+  #zen-requirements-p {
+    font-size: 1.2rem;
+    margin: 50px 20px;
+    color: #131112;
+  }
+  #zen-requirements-p p {
+    margin: 50px 20px;
+    padding: 30px 25px;
+  }
+  #zen-supporting #zen-participation h3 {
+    width: 100%;
+    margin: 30px;
+  }
+
+  #zen-supporting #zen-participation p {
+    margin: 20px;
+    margin-bottom: 50px;
   }
 }
