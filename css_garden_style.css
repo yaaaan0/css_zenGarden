@@ -182,7 +182,7 @@ abbr {
 }
 #zen-supporting #zen-benefits h3 {
   font-size: 4rem;
-  margin: 100px;
+  margin: 50px;
 }
 
 #zen-supporting #zen-benefits h3::before {
@@ -247,7 +247,6 @@ abbr {
   right: -510px;
   top: 0;
   cursor: pointer;
-  /* overflow: auto; */
   box-sizing: border-box;
 
   transition: 1s;
@@ -261,7 +260,6 @@ abbr {
   right: 0px;
   top: 0;
   cursor: pointer;
-  /* overflow: auto; */
   box-sizing: border-box;
 }
 
@@ -378,7 +376,7 @@ abbr {
   width: 40px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   #zen-summary {
     width: 90%;
     margin: 50px 10px;
@@ -412,10 +410,17 @@ abbr {
   }
   #zen-supporting #zen-participation h3 {
     width: 100%;
-    margin: 30px;
   }
 
   #zen-supporting #zen-participation p {
+    margin: 10px;
+    margin-bottom: 50px;
+  }
+
+  #zen-supporting #zen-benefits {
+    width: 90%;
+  }
+  #zen-supporting #zen-benefits p {
     margin: 10px;
     margin-bottom: 50px;
   }
@@ -515,6 +520,9 @@ abbr {
     align-items: flex-end;
   }
 
+  #zen-supporting {
+    overflow: hidden;
+  }
   #zen-supporting #zen-participation {
     flex-direction: row;
   }
@@ -540,7 +548,10 @@ abbr {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1280px) {
+@media (min-width: 992px) and (max-width: 1900px) {
+  #zen-supporting {
+    overflow: hidden;
+  }
   #zen-requirements-p {
     font-size: 1.2rem;
     margin: 50px 20px;
